@@ -1,5 +1,4 @@
 import {SecretCredentials, SimpleRequestSigner} from "./SimpleRequestSigner";
-import {DataCenter} from "../gigya";
 import SigUtils from '../sig-utils';
 import {GigyaRequest, RequestParams} from "../RequestFactory";
 
@@ -24,8 +23,8 @@ export class CredentialsSigner extends SimpleRequestSigner {
         const effectiveSecret = requestParams.secret;
 
         // clear previous authentications
-        delete requestParams.secret;
-        delete requestParams.sig;
+        requestParams.secret = '';
+        requestParams.sig = '';
 
         if (effectiveSecret) {
             requestParams.timestamp = Date.now();

@@ -9,7 +9,9 @@ import SessionExpiration from './interfaces/session-expiration';
 import Counter from './interfaces/counter';
 import Profile from './interfaces/profile';
 import BaseParams from './interfaces/base-params';
+import OTP from './otp';
 
+export * from './otp';
 export * from './rba';
 export * from './accounts.webhooks';
 export * from './interfaces/account';
@@ -24,9 +26,11 @@ export * from './interfaces/base-params';
 export class Accounts {
     public readonly rba: RBA;
     public readonly webhooks: Webhooks;
+    public readonly otp: OTP;
 
     constructor(protected gigya: Gigya) {
         this.rba = new RBA(gigya);
+        this.otp = new OTP(gigya);
         this.webhooks = new Webhooks(gigya);
     }
 

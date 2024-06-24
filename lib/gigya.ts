@@ -1,4 +1,3 @@
-import _ = require('lodash');
 import sleep from './helpers/sleep';
 import SigUtils from './sig-utils';
 import Admin, {DataCenter} from './admin';
@@ -226,6 +225,7 @@ export class Gigya {
         }
 
         // Check for rate limiting.
+         // @ts-ignore
         if (response.errorCode === ErrorCode.RATE_LIMIT_HIT) {
             // Try again after waiting.
             await sleep(Gigya.RATE_LIMIT_SLEEP);

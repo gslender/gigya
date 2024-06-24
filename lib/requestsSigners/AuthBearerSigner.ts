@@ -19,7 +19,7 @@ export class AuthBearerSigner extends AuthRequestSigner<RSACredentials> {
         request.headers.Authorization = `Bearer ${jwt}`;
 
         delete request.params.userKey;
-        delete request.params.privateKey;
+        request.params.privateKey = '';
     }
 
     private signJwt(creds: RSACredentials) {

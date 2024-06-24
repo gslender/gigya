@@ -1,13 +1,13 @@
 {
-  "name": "gigya",
+  "name": "@gslender/gigya",
   "description": "Gigya SDK for NodeJS.",
   "keywords": [
     "gigya"
   ],
-  "version": "3.0.2",
+  "version": "3.1.0",
   "author": {
-    "name": "Scott Hovestadt",
-    "email": "scott.hovestadt@gmail.com"
+    "name": "Grant Slender",
+    "email": "gslender@gmail.com"
   },
   "maintainers": [
     {
@@ -21,18 +21,18 @@
   ],
   "scripts": {
     "prepack": "npm run build",
-    "build": "tsc"
+    "build": "rm -rf dist/ && tsc"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/scotthovestadt/gigya.git"
+    "url": "git://github.com/gslender/gigya.git"
   },
   "dependencies": {
-    "@types/lodash": "^4.14.138",
-    "@types/node": "^12.7.3",
-    "@types/request": "^2.48.2",
-    "jose": "^1.17.1",
-    "lodash": "^4.17.15",
+    "@types/lodash": "^4.17.5",
+    "@types/node": "^20.14.8",
+    "@types/request": "^2.48.12",
+    "jose": "^5.4.1",
+    "lodash": "^4.17.21",
     "request": "^2.79.0",
     "strict-uri-encode": "^2.0.0"
   },
@@ -48,7 +48,7 @@
   },
   "homepage": "https://github.com/scotthovestadt/gigya",
   "devDependencies": {
-    "typescript": "3.6.2"
+    "typescript": "5.5.2"
   },
   "license": "MIT"
 }

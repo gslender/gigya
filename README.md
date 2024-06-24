@@ -1,3 +1,15 @@
+UPDATED v3.1.0 RELEASE
+==============
+* Updated cacert.pem
+* Updated deps
+* Added OTP functions
+
+Otherwise its an original fork of the release by scott.hovestadt@gmail.com
+
+Enjoy !
+
+
+
 Unofficial Gigya JavaScript REST SDK
 ==============
 

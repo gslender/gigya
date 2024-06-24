@@ -6,7 +6,7 @@ export function sleep(ms: number) {
         if (ms === 0) {
             setImmediate(resolve);
         } else {
-            setTimeout(() => resolve(), ms);
+            setTimeout(() => resolve(undefined), ms);
         }
     });
 }

@@ -4,7 +4,7 @@
   "keywords": [
     "gigya"
   ],
-  "version": "3.1.0",
+  "version": "3.1.1",
   "author": {
     "name": "Grant Slender",
     "email": "gslender@gmail.com"
@@ -28,12 +28,12 @@
     "url": "git://github.com/gslender/gigya.git"
   },
   "dependencies": {
-    "@types/lodash": "^4.17.5",
-    "@types/node": "^20.14.8",
+    "@types/lodash": "^4.17.7",
+    "@types/node": "^22.5.0",
     "@types/request": "^2.48.12",
-    "jose": "^5.4.1",
+    "jose": "^5.7.0",
     "lodash": "^4.17.21",
-    "request": "^2.79.0",
+    "request": "^2.88.2",
     "strict-uri-encode": "^2.0.0"
   },
   "files": [
@@ -48,7 +48,7 @@
   },
   "homepage": "https://github.com/scotthovestadt/gigya",
   "devDependencies": {
-    "typescript": "5.5.2"
+    "typescript": "5.5.4"
   },
   "license": "MIT"
 }
